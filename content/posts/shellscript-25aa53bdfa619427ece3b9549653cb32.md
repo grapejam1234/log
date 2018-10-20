@@ -1,0 +1,42 @@
+---
+title: "Shellscript"
+date: 2018-10-20T15:32:21+09:00
+featured_image: "images/shell.jpg"
+tags: ["note"]
+draft: false
+---
+シェルスクリプトの使い方を検索するのが結構大変なので書き留める。
+
+### 条件分岐
+```
+if [ "$FOO" = "foo" ]; then
+    # 文字列比較
+elif [ "$FOO" = "foo" -a "$VAR" = "var" ]; then
+    # AND
+elif [ "$FOO" = "foo" -o "$VAR" = "var" ]; then
+    # OR
+elif [ "$FOO" -gt 128 -a "$FOO" -lt 256 ]; then
+    # 128超、256未満か？
+elif [ "$FOO" -ge 128 -a "$FOO" -le 256 ]; then
+    # 128以上、256以下か？
+else
+
+fi
+```
+### 繰り返し
+
+```
+for i in `seq 1 10`
+do
+    # 1 2 ... 10 と出力される。10回繰り返す。
+    echo ${i}
+done
+```
+
+```
+for i in `ls ./your/dir`
+do
+    # パスが出力される。dirにあるファイル等の数だけ繰り返す。
+    echo ${i}
+done
+```
