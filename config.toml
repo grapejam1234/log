@@ -18,6 +18,7 @@ Paginate = 3 # this is set low for demonstrating with dummy content. Set to a hi
   filename = "sitemap.xml"
 
 [params]
+  env = "production"
   favicon = ""
   description = "PENGUINSAN WEBSITE"
   images = "images/shell.png"
