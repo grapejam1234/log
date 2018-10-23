@@ -19,7 +19,7 @@ Paginate = 3 # this is set low for demonstrating with dummy content. Set to a hi
 
 [params]
   env = "production"
-  favicon = "/images/penguin.png"
+  favicon = "https://penguinsan.netlify.com/images/penguin.png"
   description = "PENGUINSAN WEBSITE"
   facebook = ""
   twitter = ""
